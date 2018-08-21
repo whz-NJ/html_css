@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+	color: #424242; /*标准的字体颜色：黑色*/
+	font-family: arial;
+}
+
+a{
+	text-decoration: none;
+}
+
+.nav{
+	list-style: none;
+}
+.nav .list-item{
+	float: left;
+	margin: 0 10px;
+	height: 30px;
+	line-height: 30px; /*使字体在容器的正中间*/
+/*	border: 1px solid black; /*开发过程中用的参考线*/*/
+}
+
+.nav .list-item a {
+	padding: 0 5px;
+	color:#f40;
+	font-weight: bold;
+	height: 30px;
+	display: inline-block;/*将a标签设置为块级元素后，才能设置其高度（保持和li高度一样）*/
+	border-radius: 15px;
+}
+
+/*鼠标挪上去后颜色反转*/
+.nav .list-item a:hover{
+	color:#fff;
+	background-color: #f40;
+}
+/*清除浮动流，这样该元素后续元素，不会和.nav排成一排*/
+/*.nav::after{
+	content: "";
+	display: block;
+	clear: both;
+}*/

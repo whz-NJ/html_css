@@ -1,0 +1,44 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+/*a{
+	display: inline-block; 默认为inline
+	text-decoration: none;
+	color: #424242;
+	width: 190px;
+	height: 90px;
+	border: 1px solid black;
+	background-image: url(https://img.alicdn.com/tfs/TB1_uT8a5ERMeJjSspiXXbZLFXa-143-59.png);
+	background-size: 190px 90px;（背景图片大小和a标签大小一致）
+}
+*/
+/*当有css时显示图片，没有css时显示文字的实现方法一*/
+/*a{
+	display: inline-block; 
+	text-decoration: none;
+	color: #424242;
+	width: 190px;
+	height: 90px;
+	border: 1px solid black;
+	background-image: url(https://img.alicdn.com/tfs/TB1_uT8a5ERMeJjSspiXXbZLFXa-143-59.png);
+	background-size: 190px 90px;
+
+	text-indent: 200px; 将文字首行缩进设置为和a元素本身一样宽（或更宽）
+	white-space: nowrap; 文字不换行
+	overflow: hidden;超出部分不显示
+}*/
+/*当有css时显示图片，没有css时显示文字的实现方法二*/
+a{
+	display: inline-block; 
+	text-decoration: none;
+	color: #424242;
+	width: 190px;
+	height: 0px;/*这样内容区就没有了*/
+	padding-top: 90px; /*通过padding区域展示背景图片（不通过内容区展示）*/
+	overflow: hidden; /*由于没有内容区，文字肯定溢出了*/
+	border: 1px solid black;
+	background-image: url(https://img.alicdn.com/tfs/TB1_uT8a5ERMeJjSspiXXbZLFXa-143-59.png);
+	background-size: 190px 90px;
+}

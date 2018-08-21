@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Document</title>
+	<meta charset="UTF-8">
+<!-- 	<style type="text/css">
+		div{
+		  width: 100px;
+          height: 100px;
+          background-color: green
+		}
+	</style> -->
+	<link rel="stylesheet" type="text/css" href="lesson3.css">
+</head>
+<body>
+	<!-- 1.id选择器 -->
+	<div id="only">123</div>
+	<div id="onlyU">234</div>
+	<!-- 2.class选择器，多个元素可以有相同class，一个元素可以有多个class -->
+	<div class='demo'>345</div>
+	<div class='demo demo1'>456</div>
+	<div class='demo'>678</div>
+	<!-- 3.标签选择器 -->
+	<span>789</span>
+	<div><span>890</span></div>
+	4、通配符选择器
+	<span>123</span>
+	<div>234</div>
+	<strong>111</strong>
+	<!-- id选择器的优先级最高，当不同选择器设置元素相同属性时，优先级高的生效。 -->
+	<!-- 这是关于什么什么的功能 -->
+	<!--注释用来调试，将可以代码注释，看能否正常，确定范围-->
+<!--     <div></div> -->
+<!--     html：结构
+    css：样式 cascading style sheet 层叠样式表，装修材料，装修html
+    javascript：行为 -->
+    <!-- 引入css -->
+<!--     1、行间样式：
+    <div style="width: 100px;
+    height: 100px;
+    background-color: red">
+</div> -->
+<!-- 2、页面级css(在head.style里写css,该css会作用到body里定义的相同元素上) -->
+<!-- 3、外部css文件：在head里加link，关联一个css文件，浏览器会新启动线程，同时下载html和link里指定的css文件，异步加载-->
+<div></div>
+<!-- 访问百度/淘宝，是向百度/淘宝下载html/css/javascript，然后在本地运行。
+访问后，在chrome里右键，选“检查”，在elements里修改这些文件，是修改的下载到本地的文件，远程服务器文件不会变的。
+ -->
+ <!-- id选择器优先级比class选择器优先级高。 -->
+<!--  class优先级比标签选择器高。 -->
+<!-- 通配符选择器优先级最低 -->
+<!-- 行间样式优先级大于id选择器 -->
+<!-- 属性选择器 -->
+<div id="Only2" class="demo">123</div>
+<div id="Only3" class="demo">234</div>
+<!-- 属性选择器和class选择器优先级相同，此时谁在css文件里先出现，谁的优先级就高。 -->
+<!-- css代码里的属性如果用!important修饰，它的优先级最高。
+ -->
+ <div style="background-color: red；">000</div>
+<!--  选择器优先级排序：!important > 行间样式 > id > class|属性 > 标签选择器 > 通配符 -->
+<!-- 分组选择器不是一种选择器类型，而是一种选择器使用方法。当多个对象定义了相同的样式时，就可以把它们分成一组，这样能够简化代码 -->
+<!-- 分组选择器，可以使用逗号把同组内不同对象分隔。 -->
+</body>
+</html>

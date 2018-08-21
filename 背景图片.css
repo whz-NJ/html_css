@@ -1,0 +1,13 @@
+*{
+	margin:0;
+	padding: 0;
+}
+div{
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+	background-image: url(wqy.jpg);
+	background-size: 100px 100px;
+	background-repeat: no-repeat; /*默认策略是重复出现(repeat)，还有no-repeat,repeat-x,repeat-y，一般用no-repeat*/
+	background-position: 100px 100px;/* 还可以取center center/ top center/left bottom/left center; 以及50% 50% 等等值*/
+}

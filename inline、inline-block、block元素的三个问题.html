@@ -1,0 +1,36 @@
+<html lang="en">
+<head>	<meta charset="utf-8">
+	<title>document</title>
+	<link rel="stylesheet" type="text/css" href="inline、inline-block、block元素的三个问题.css">
+</head>
+<body>
+<!-- 凡是display带有inline属性（inline或inline-block）的元素，都具有文本属性，所以又叫文本类元素。
+文本属性：文字中间有若干空格，展现时仅展示一个空格。
+然后span是inline元素，所以<span>123</span>   <span>234</span> （中间有多个空格），展示时仅有一个空格 -->
+
+<!-- 再比如图片img，默认是inline-block类型元素，
+<img src="wqy.jpg" alt="">
+<img src="wqy.jpg" alt="">
+<img src="wqy.jpg" alt="">
+<img src="wqy.jpg" alt=""> -->
+<!-- 设置width属性，然后发现它们并在一横行，然后发现每个图片中间有6像素的间隔，残暴的办法：margin-left:-6px，但代码上传服务器后要压缩，删除img元素中间的空格和回车换行，而margin-left还设置为-6px，就多移了，把前面的图片边上6像素宽内容覆盖了。所以解决这个问题最好办法，是删除img元素之间的空格回车换行，不设置margin-left。 -->
+
+<!-- 第三个问题 -->
+<!-- span默认为inline，所以无法设置宽高，但如果设置了position:absolute或float:right/left属性，就会自动添加display:inline-block属性，这时就可以设置宽高了。 -->
+<!-- <span>123</span> -->
+
+<!-- 第四个问题 -->
+<!-- 一行多个文本，底部对齐 -->
+<!-- <div>你们成哥最帅<span>呵呵</span></div> -->
+<!-- 文本和图片，也是底部对齐 -->
+<!-- <img src="wqy.jpg" alt="">呵呵 -->
+<!-- 一旦行级块元素或文本类元素里包含文字，元素外边的文字和这些行级块元素或文本类元素里面的文字底部对齐。 -->
+<span>123</span>123
+
+<!-- 一个大容器里面套两个在一行的小容器，一个在左，一个在右 -->
+<div>
+	<ul style="float: left"><li>hello</li><li>2</li></ul>
+    <ul style="float: right"><li>hello3</li><li>4</li></ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+*{
+	margin:0;
+	padding: 0;
+}
+.wrapper{
+	margin-left:100px;
+	margin-top: 100px;
+	width: 100px;
+	height: 100px;
+	background-color: black;
+	/*border-top:1px solid red；*/
+	overflow: hidden; /*溢出盒子部分隐藏起来，不展示*/
+/*	display: inline-block;
+	position: absolute;*/
+}
+.content {
+	margin-left:75px;
+	margin-top: 50px;
+	width: 50px;
+	height: 50px;
+	background-color: green;
+}
+.box1{
+	background-color: red;
+	margin-right: 100px;
+}
+.box2{
+	background-color: green;
+	margin-left: 100px;
+}
+.demo1{
+	background-color: red;
+	margin-bottom: 50px;
+}
+.demo2{
+	background-color: green;
+	 margin-top: 100px; 
+}
+/*bug2的解决办法*/
+.wrapper2{
+	overflow: hidden;
+}
+.demo3{
+	background-color: red;
+	margin-bottom: 50px;
+}
+.demo4{
+	background-color: green;
+	 margin-top: 100px; 
+}

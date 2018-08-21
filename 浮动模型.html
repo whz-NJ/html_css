@@ -1,0 +1,29 @@
+<html lang="en">
+<head>	<meta charset="utf-8">
+	<title>document</title>
+	<link rel="stylesheet" type="text/css" href="浮动模型.css">
+</head>
+<body>
+<!-- 有三大模型：盒模型、层模型（同层相同位置不能出现两个元素，自动顶开，不同层允许不同元素使用相同位置）、浮动模型。 -->
+<!-- <div class="wrapper">
+	<div class="content">1</div>
+	<div class="content">2</div>
+	<div class="content">3</div>
+	<div class="content">4</div>
+	<div class="content">5</div>
+	<div class="content">6</div>
+	<div class="content">7</div>
+	<div class="content">8</div>
+	<div class="content">9</div>
+</div> -->
+<!-- float模型，不管原来元素是inline/inline-block/block，都会按照块级元素方式排列站队，在站队基础上，原来的margin-left/margin-top...等属性仍然有效 -->
+<!-- 上面一个兄弟带有float属性，下面兄弟没有带，则下面兄弟也重用了上面兄弟的位置（和position类似，好像也分层了，但实际上float元素没有分层，只是产生了浮动流，该浮动流对后续其他元素产生不同影响： -->
+<!-- 浮动元素产生了浮动流
+所有产生浮动流的元素，块级元素看不到它们，产生了bfc的元素和文本类属性的元素（即带有inline属性的元素）以及文本都能看的浮动元素 -->
+<div class="box"></div>123
+<!-- <img src="wqy.jpg" alt=""> -->
+<div class="demo"></div>
+
+</body>
+
+</html>

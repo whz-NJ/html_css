@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		input{
+	        border:1px solid #999;
+        }
+	</style>
+</head>
+<body>
+
+<form method="get" action="http://www.baidu.com">
+	<p>
+	username:<input type="text" name="username" style="color:#999" value="请输入用户名" onfocus="if(this.value='请输入用户名'){this.value='';this.style.color='#424242'}" onblur="if(this.value==''){this.value='请输入用户名';this.style.color='#999'}">
+</p>
+<p>
+	password:<input type="password" name="password">
+</p>
+<h1>你们所希望的男星：</h1>
+<!-- 1.贝克汉姆<input type="radio" name="star" value="xiaobei">
+2.莱昂纳多<input type="radio"name="star" value="xiaolai">
+3.成哥<input type="radio" name="star" value="handsome">
+<input type="submit" value="提交2"> -->
+1.贝克汉姆<input type="checkbox" name="star" value="xiaobei">
+2.莱昂纳多<input type="checkbox"name="star" value="xiaolai">
+3.成哥<input type="checkbox" name="star" value="handsome">
+<input type="submit" value="提交2">
+<h1>Province</h1>
+<select name="province">
+	<option value="BJ">beijin</option>
+	<option value="SH">tianjin</option>
+	<option value="TJ">tianjin</option>
+</select>
+html 4.0.1
+html 5
+主流浏览器和内核？？
+shell（外观） 内核
+IE          trident
+Firefox     Gecko
+chrome      Webkit/blink
+Safari(iOS) Webkit
+
+<h1>Choose your sex</h1>
+male:<input type="radio" name="sex" value="male" checked="checked">
+female:<input type="radio" name="sex" value="female">
+<br>
+<input type="submit">
+
+<!-- 在打开网页，右键，选“检查”，输入以下代码，可以看到用户输入的密码：
+var div=document.getElementsByTagName("input")[1];
+div.value
+ 一般后台通过md5将密码加密后存入数据库。
+ 2G网络对数据没有加密，3G/4G有加密，抓包也不知道啥内容。所以手机退回到2G网络，是及其不安全的。可以通过技术手段，将手机降到2G，此时不要用支付宝/银行卡。
+ -->
+
+
+<!-- 	username2:<input type="text">
+    <br>
+	password2:<input type="password">
+    <br> -->
+</form>
+<input type="submit" value="提交">
+</body>
+</html>

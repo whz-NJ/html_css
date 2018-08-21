@@ -1,0 +1,24 @@
+<html lang="en">
+<head>	<meta charset="utf-8">
+	<title>document</title>
+	<link rel="stylesheet" type="text/css" href="不通过css添加背景图片-图片代替文字的正确方法.css">
+</head>
+<body>
+	<!-- <a href="http://www.taobao.com" target="_blank">淘宝网</a> --><!-- 这里的target="_blank"表示新打开一个空白页，然后打开淘宝 -->
+<!-- 当网站网速过慢（10kb~20kb/s），可能会不传css/javascript，这时如何展示文字 -->
+    <!-- 实现方法一 -->
+<!-- 	<a href="http://www.taobao.com" target="_blank">淘宝网</a> -->
+	<!-- 实现方法二 -->
+	<!-- padding/border/content都是盒子的一部分，所以可以给padding设置背景颜色或背景图片，只是padding无法显示内容 -->
+	<a href="http://www.taobao.com" target="_blank">淘宝网</a>
+<!-- 行级元素只能嵌套行级元素（行级元素本来就小，不允许套块级元素），块级元素可以嵌套任何元素。 -->
+<!-- 但有个特例：p标签（块级元素）不允许嵌套块级元素 -->
+<!-- 比如下面的代码，p标签会被div标签砍成两个p标签： -->
+<!-- <p>
+	<div>haha</div>
+</p> -->
+<!-- 实际为<p></p><div></div><p></p> -->
+<!-- 另外一个特例是a标签不允许嵌套a标签 -->
+
+</body>
+</html>

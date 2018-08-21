@@ -1,0 +1,32 @@
+.wrapper{
+	border: 1px solid red;
+}
+.content {
+	color:#fff;
+	float: left;
+	background-color: black;
+	width: 100px;
+	height: 100px;
+}
+.clear{
+	clear: both; /*清除浮动流*/
+}
+/*通过after伪元素清除浮动流*/
+.wrapper::after{
+	content: ""; /*属性必须设置*/
+	clear: both;
+	display: block; /*清除伪元素的clear属性必须放在块级元素上才能生效，
+	                伪元素默认为行级元素，无法生效，所以这里设置为block。*/
+}
+/*通过将父级元素设置为BFC元素，也可以将浮动元素包裹起来。
+不过设置了position:absolute；或float:left/right属性后，
+系统会把元素转换为inline-block类型（如果不设置宽高，宽高由内容决定）。
+这样父级元素的边框将紧紧包裹其内容（相比通过after伪元素，边框要窄些）。*/
+span{
+	position: absolute;/* 如果不设置position:absolute属性，下面设置的宽高无效*/
+	width: 100px;
+	height: 100px; 
+	background-color: red;
+}
+
+

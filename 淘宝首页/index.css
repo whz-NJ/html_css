@@ -1,0 +1,831 @@
+*{
+    margin: 0;
+    padding: 0;
+     list-style: none; /*去掉ul里的小黑点 */
+     text-decoration: none;
+}
+html,body{
+    width:100%; /* 宽度和浏览器窗口宽度一样 */
+    background-color: #f4f4f4;
+    height: 1000px;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+.wrapper .top-nav-wrap
+{
+    width: 100%;
+    height: 35px;
+    background-color: #f5f5f5;
+    border:1px solid #eee;
+    
+}
+.wrapper .top-nav-wrap .top-nav {
+    width: 1190px;
+    height: 35px;
+    margin: 0px auto;
+    /* border: 1px solid black; */
+}
+.wrapper .top-nav-wrap .top-nav .top-nav-l {
+    float: left;
+}
+
+.wrapper .top-nav-wrap .top-nav .top-nav-r {
+    float: right;
+}
+.wrapper .top-nav-wrap .top-nav li {
+    float: left;
+    margin-right: 7px;
+}
+
+.wrapper .top-nav-wrap .top-nav li a {
+    color: #6c6c6c;
+    font-size:12px;
+    line-height: 35px;
+    padding: 0 6px;
+}
+.wrapper .top-nav-wrap .top-nav .china{
+    color: #3c3c3c;
+    font-size: 12px;
+    line-height: 35px;
+}
+.wrapper .top-nav-wrap .top-nav .china .china-span{
+    padding: 0 6px;
+}
+.wrapper .top-nav-wrap .top-nav li a:hover,
+.wrapper .top-nav-wrap .top-nav li .login
+{
+    color: #f40;
+}
+.wrapper .top-nav-wrap .top-nav .cutOff span{
+    color: #ddd;
+    line-height: 35px;
+}
+.wrapper .top-nav-wrap .top-nav .bgPic{
+    display: inline-block;
+    width: 6px;
+    height: 3px;
+    vertical-align: middle;
+    background-size: 100% 100%;
+    /* border: 1px solid black; */
+}
+.wrapper .top-nav-wrap .top-nav .xsjPic{
+    background-image: url("img/xsj.png");
+}
+.wrapper .top-nav-wrap .top-nav .shopCarPic{
+    width: 12px;
+    height: 12px;
+    background-image: url("img/gwc.png");
+}
+.wrapper .top-nav-wrap .top-nav .likePic{
+    background-image: url("img/star.png");
+    width: 11px;
+    height: 11px;
+}
+.wrapper .top-nav-wrap .top-nav .webNavPic
+{
+    width: 12px;
+    background-image: url("img/dh.png");
+    height: 12px;
+}
+/* 导航条结束 */
+.wrapper .search-wrap{
+    width: 100%;
+    height: 97px;
+    /* border: 1px solid black; */
+    background-color: #fff;
+    padding-top: 24px;
+    padding-bottom: 9px;
+}
+.wrapper .search-wrap .search-con{
+    width: 1190px;
+    height: 88px;
+    /* border: 1px solid black; */
+    margin: 0 auto; /*居中*/
+}
+.wrapper .search-wrap .search-con .logo-box{
+    width: 190px;
+    height: 80px;
+    /* border: 1px solid black; */
+    display: inline-block;
+    vertical-align: middle;
+}
+.wrapper .search-wrap .search-con .logo-box img
+{
+    width: 100%;
+    height: 100%; /*使img和它的父级内容区大小一致*/
+}
+.wrapper .search-wrap .search-con .search-box
+{
+    height: 87px;
+    width: 627px;
+    /* border: 1px solid black; */
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 50px; /*让search-box和logo-box中间空一段距离*/
+}
+.wrapper .search-wrap .search-con .search-box .search-bd
+{
+width: 627px;
+height:62px;
+/* border: 1px solid black; */
+}
+.wrapper .search-wrap .search-con .search-box .search-bd .search-tab
+{
+    width: 610px;
+    height: 22px;
+    margin-left: 17px;
+    /* border: 1px solid black; */
+}
+
+.wrapper .search-wrap .search-con .search-box .search-bd li
+{
+    float: left;
+    width:36px;
+    height: 22px;
+    text-align: center;
+    line-height: 22px;
+    color: #f40;
+    margin-right: 4px;
+    cursor:pointer;
+    font-size: 12px; 
+}
+.wrapper .search-wrap .search-con .search-box .search-bd li:hover{
+    background-color: #ffeee5;
+
+}
+.wrapper .search-wrap .search-con .search-box .search-bd .select
+{
+    background: linear-gradient(to right, #ff9000,#ff5000 100%);
+    color: #fff;
+    font-weight: 700;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.wrapper .search-wrap .search-con .search-bd .search-panel{
+    width: 627px;
+    height: 40px;
+    position: relative; /*让button相对于父级定位，排在input后面 */
+/* border: 1px solid black; */
+}
+.wrapper .search-wrap .search-con .search-bd .btn{
+    position: absolute;
+    right: 0px;
+    top:0px; /*让button在panel内的右边*/
+    width:74px;
+    height: 40px;
+    z-index: 1000;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center; /*父级设置的属性，子级会继承 */
+}
+.wrapper .search-wrap .search-con .search-bd .btn button{
+    border: none;
+    background: linear-gradient(to right,#ff9000 0,#ff5000 100%);
+    width: 100%;
+    height: 100%; /*宽高和父级一样*/
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    color: #fff; /*字体颜色*/
+    font-size: 18px;
+    font-weight: 700;
+}
+.wrapper .search-wrap .search-con .search-inp-box{
+    width:551px;
+    border: 2px solid #ff5000; /*审查元素看到的宽度为width+border;*/
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: none; /*因为右边和button连一起，所以不要border*/
+    height: 36px; 
+    overflow: hidden; /*让输入文本框超出部分隐藏*/
+}
+.wrapper .search-wrap .search-con .search-inp-box .search-inp{
+    width: 472px;
+    height: 36px;
+    overflow: hidden;
+}
+.wrapper .search-wrap .search-con .search-inp-box .search-inp input{
+    width: 472px;
+    height: 24px;
+    line-height: 24px;
+    border: none; /*不要显示边框*/
+    outline: 0; /*鼠标聚焦上去时不显示边框*/
+    text-indent: 10px;
+    padding: 6px 16px; /*左右的padding比较大，留出空间给左边的放大镜*/
+    background-color: #fff;
+}
+.wrapper .search-wrap .search-con .search-panel .sousuo,
+.wrapper .search-wrap .search-con .search-panel .camera{
+    display: inline-block;
+    position: absolute; /* 使之一个在具有relative的父级最左边，一个在具有relative的父级最右边 */
+}
+.wrapper .search-wrap .search-con .search-panel .sousuo {
+    width: 12px;
+    height: 16px;
+    top: 11px;
+    left: 12px;
+    background: url("img/fdj.png") no-repeat;
+    background-size: 100% 100%; /*让背景图片大小和width/height一致*/
+}
+.wrapper .search-wrap .search-con .search-panel .camera{
+    width: 20px;
+    height: 22px;
+    top: 11px;
+    right: 90px;
+    background: url("img/camera.png") no-repeat;
+    background-size: 100% 100%; /*让背景图片大小和width/height一致*/
+}
+
+
+.wrapper .search-wrap .search-con .search-box .search-ft {
+    width: 625px;
+    height: 18px;
+    /* border: 1px solid black; */
+}
+
+.wrapper .search-wrap .search-con .search-box .search-ft ul li {
+    float: left; /*横排序*/
+}
+.wrapper .search-wrap .search-con .search-box .search-ft ul li a{
+    font-size: 12px;
+    color:#666;
+    margin-right: 8px;
+}
+.wrapper .search-wrap .search-con .search-box .search-ft a:hover,
+.wrapper .search-wrap .search-con .search-box .search-ft ul .select a
+{
+    color: #ff5000;
+
+} 
+.wrapper .search-wrap .search-con .search-box .search-ft .more{
+    float: right; /*右对齐*/
+    font-size: 12px;
+    color:#666;
+    line-height: 18px; /*设置高点，让文字向下方向挪点，居中*/
+}
+
+
+.wrapper .search-wrap .search-con .code-box{
+    height: 90px;
+    width: 76px;
+    border: 1px solid #eee;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative; /*让里面的子元素可以使用绝对定位*/
+    margin-left: 120px;
+}
+
+.wrapper .search-wrap .search-con .code-box .p-tb{
+    display: inline-block;
+    color: #ff5000; /*淘宝红*/
+    text-align: center; /*文字水平居中*/
+    line-height: 20px;
+    margin: 4px auto 0;
+    width: 78px;
+    font-size:14px;
+}
+.wrapper .search-wrap .search-con .code-box .code{
+    display: inline-block;
+    width: 62px;
+    height: 62px;
+    background: url("img/ewm.png") no-repeat;
+    background-size: 100% 100%; /*背景图片尺寸和当前容器大小一致*/
+    margin-left: 6px; /*让图片水平靠右挪一些*/
+}
+.wrapper .search-wrap .search-con .code-box .close{
+    position: absolute;
+    top:0;
+    height: 14px;
+    width: 14px;
+    border: 1px solid #eee;
+    left:-14px; /*让它挪到二维码方块的左边*/
+    line-height: 14px;
+    text-align: center;
+    color: #ddd; /*文字颜色*/
+    font-size: 14px;
+
+}
+/* 中间导航条开始 */
+.wrapper .screen-nav-wrap {
+    width: 100%; /*自适应*/
+    height: 30px;
+}
+.wrapper .screen-nav-wrap .screen-nav-con{
+    width: 1190px; /*中间区域宽度固定*/
+    height: 30px;
+    margin: 0 auto; /*上下0，左右居中*/
+    background: linear-gradient(to right, #ff9000, #ff5000);
+}
+.wrapper .screen-nav-wrap .screen-nav-con h2{
+    float: left; /*让后面的ul/li可以和它一行*/
+    width: 190px;
+    height: 30px;
+    color:#fff;
+    background-color: #ff5000; /*文字背景颜色*/
+    font-size: 16px; /*和ul/li一致*/
+    line-height: 30px;
+    text-align: center;
+
+}
+.wrapper .screen-nav-wrap .screen-nav-con ul{
+    float: left; /*横行排列*/
+    height: 30px;
+    font-size: 16px;
+
+}
+.wrapper .screen-nav-wrap .screen-nav-con ul li{
+    float: left; /*横行排列*/
+    text-align: center;
+    padding: 0 4px;
+    margin: 0 3px;
+    line-height: 30px;
+    font-weight: 700px; /*字体加粗*/ 
+    color: #fff;
+}
+.wrapper .screen-nav-wrap .screen-nav-con ul li a{
+    color: #ffffff;
+    text-align: center; /*水平方向居中*/
+    line-height: 30px;
+}
+/*中间导航条结束*/
+
+.wrapper .screen-box-wrap{
+    width: 1190px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    height: 632px;
+}
+
+.wrapper .screen-box-wrap .main{
+    width: 890px;
+    height: 632px;
+    /* border: 1px solid black; */
+    float: left;
+}
+.wrapper .screen-box-wrap .main .main-inner{
+    width: 720px;
+    height: 522px;
+    /* border: 1px solid black; */
+    display: inline-block; /*将块级元素变成行级元素，这样.main内两个元素同行显示 */
+    vertical-align: top; /*垂直方向顶部对齐*/
+}
+.wrapper .screen-box-wrap .main .main-inner .inner-left{
+    width: 190px;
+    height: 522px;
+     background-color: #fff; 
+    float: left; /*浮动，脱离原来的文档流，这样.main-inner里float:left元素就会同行显示*/
+}
+.wrapper .screen-box-wrap .main .main-inner .inner-left ul{
+    border: 1px solid #ff5000;
+    border-top: none;
+    padding-top: 5px;
+    padding-bottom: 3px; 
+    font-size: 14px; /*每个li字体大小14px*/
+}
+ .wrapper .screen-box-wrap .main .main-inner .inner-left ul li{
+    height: 32px; /*各个li行间距,把.inner-left占满*/
+    width: 144px; /*减小一个像素，让ul的边框显示出来*/
+    line-height: 32px;
+    font-weight: 400;
+    padding-left: 25px;  /*让li水平方向稍居中*/
+    padding-right: 19px; /*让li水平方向稍居中*/
+    position: relative; /*让内部右边存放>的span绝对定位*/
+} 
+.wrapper .screen-box-wrap .main .main-inner .inner-left ul li a{
+    color: #666;
+}
+.wrapper .screen-box-wrap .main .main-inner .inner-left ul li:hover a{
+    color:#ff5000;
+}
+.wrapper .screen-box-wrap .main .main-inner .inner-left ul li:hover{
+    background-color: #ffeee5;
+    color: #ff5000; /*让li之间的/分割线颜色也改变*/
+}
+.wrapper .screen-box-wrap .main .main-inner .inner-left ul li span{
+    position: absolute;
+    display: inline-block;
+    right: 10px; /*绝对定位，让右边坐标为10px;*/
+    height: 8px;
+    width: 5px; /*如果不设置width/height，将无法显示图标，（审查元素显示的大小，有个为0，无法显示图片）*/
+    background-image: url("img/yjt.png");
+    background-size: 100% 100%;
+    top:50%; /*相对定位*/
+    margin-top: -4px;
+}
+
+.wrapper .screen-box-wrap .main .main-inner .inner-con{
+    width: 520px;
+    height: 512px;
+    /* background-color: red; */
+    float: left; /*浮动，脱离原来的文档流，这样.main-inner里float:left元素就会同行显示*/
+    /* border: 1px solid red; 加入border后，一行无法显示，冲到下一行去了，所有不用border，用backgroud-color调试*/
+    /* background-color: red; */
+    margin-left: 10px;
+    margin-top: 10px;
+ 
+}
+.wrapper .screen-box-wrap .main .main-inner .inner-con .pic-box{
+    position: relative;
+    width: 520px;
+    height: 280px;
+}
+.wrapper .screen-box-wrap .main .main-inner .inner-con .pic-box ul{
+    position: absolute; /*父级有position: relative;属性，所以这里可以用绝对定位*/
+    bottom: 15px;
+    left:50%; /*元素居中*/
+    margin-left: -35px;
+    /* width: 70px; 如果不注释掉这行，里面的a标签显示的圆点会分行*/
+    background-color: rgba(255,255,255,.3); /*透明色*/
+    height: 13px;
+    border-radius: 10px;
+}
+.wrapper .screen-box-wrap .main .main-inner .inner-con .pic-box ul li{
+    float: left; /*横着排，这样里面的a标签也横过来了*/
+    margin: 3px;
+}
+.wrapper .screen-box-wrap .main .main-inner .inner-con .pic-box ul li a{
+    display: block; /*需要设置宽高，所以设置为block*/
+    width: 8px;
+    padding-top: 8px; /*用它撑开内容区*/
+    height: 0px;
+    border-radius: 50%; /*显示圆点*/
+    background-color: #fff;
+}
+.wrapper .screen-box-wrap .main .main-inner .inner-con .pic-box ul li .select{ /*这里.select不是li的类名，而是其子元素类名*/
+    background-color: #ff5000;
+}
+
+.wrapper .screen-box-wrap .main .main-inner .inner-mall{
+    width:520px;
+    height: 230px;
+}
+.wrapper .screen-box-wrap .main .main-inner .inner-mall img{
+    width:520px; /*图片大小和父级一样宽*/
+}
+.wrapper .screen-box-wrap .main .main-inner .inner-mall .head{
+    width: 520px;
+    height: 22px;
+    border-bottom: 3px solid #ff1648;
+}
+.wrapper .screen-box-wrap .main .main-inner .inner-mall .head .tm-pic{
+    display: inline-block; /*span元素需要设置宽高，所以要修改display*/
+    width: 136px;
+    height: 20px;
+    background-image: url("img/tm.png");
+    background-size: 100% 100%;
+
+}
+.wrapper .screen-box-wrap .main .main-inner .inner-mall .head .tm{
+    color: #666;
+    font-size: 12px;
+}
+.wrapper .screen-box-wrap .main .col-middle{
+    width: 160px;
+    height: 512px; /*增加margin-top后，减小height，保持和左边图片底部对齐*/
+    margin-top: 10px;/*让右边图片(当前装图片的容器)和左边图片对齐*/
+    /* border: 1px solid black; */
+    display: inline-block; /*将块级元素变成行级元素，这样.main内两个元素同行显示*/
+}
+.wrapper .screen-box-wrap .main .col-middle h5{
+    color: #a1a1a1;
+    font-size: 12px;
+    line-height: 20px;
+}
+.wrapper .screen-box-wrap .main .main-bottom{
+    width:888px;
+    height: 100px;
+}
+.wrapper .screen-box-wrap .main .main-bottom .bottom-con{
+    position: relative; /*内部子元素相对于它采用绝对定位*/
+    margin-top: 10px;
+    padding:14px 14px 12px 20px;
+    height: 73px; /*后来加的，为了把内容区显示出来（内部子元素脱离了文档流，无法把它撑开。）*/
+    background-color: #fff;
+}
+.wrapper .screen-box-wrap .main .main-bottom .logo{
+    float: left; /*文字环绕图片，用浮动*/
+}
+.wrapper .screen-box-wrap .main .main-bottom .tbttCon{
+    width: 675px;
+    height: 73px;
+    position: absolute; /*相对于.bottom-con*/
+    top:14px;
+    left: 200px;
+}
+
+.wrapper .screen-box-wrap .main .main-bottom .tbttCon img{
+    float: left; /*作成文字环绕图片的效果*/
+    width: 130px;
+    height: 73px;
+}
+
+.wrapper .screen-box-wrap .main .main-bottom .tbttCon h4{
+    font-size:16px;
+    font-weight: 500;
+    line-height: 28px;
+    color:#333;
+    margin-top: 2px;
+    margin-left: 144px;
+}
+.wrapper .screen-box-wrap .main .main-bottom .tbttCon h4:hover{
+    color: #ff5000;
+
+}
+.wrapper .screen-box-wrap .main .main-bottom .tbttCon p{
+    color: #999;
+    line-height: 18px;
+    height: 36px;
+    overflow: hidden;
+    font-size: 14px;
+    margin-left: 144px;
+}
+
+.wrapper .screen-box-wrap .col-right{
+    width: 290px;
+    height: 622px; /*底部没有和左边对齐，这里间10px*/
+    /* border: 1px solid black; 总共的宽度大于父级元素的width，所以它在新的一行显示了*/
+    /* background-color: red; /*为了调试，加入背景色（加border会变宽，导致在下一行显示 */
+    /*opacity: 0.5; */
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    background: #ffffff;
+}
+
+.wrapper .screen-box-wrap .col-right .member{
+    width: 290px;
+    height: 132px; /*如果为145px，下面的message将往下，中间空白很多*/
+    padding: 3px 0 10px 0px;
+    background: url(img/bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.wrapper .screen-box-wrap .col-right .member .member-bd{
+    width: 290px;
+    height: 91px;
+    /* border-bottom: 1px solid black; */
+}
+.wrapper .screen-box-wrap .col-right .member .member-bd .tx{
+    width: 290px;
+    text-align: center;
+    height: 56px;
+}
+.wrapper .screen-box-wrap .col-right .member-bd .tx a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /*显示为圆形*/
+}
+.wrapper .screen-box-wrap .col-right .member-bd .tx img{
+    border-radius: 50%; /*显示为圆形*/
+}
+.wrapper .screen-box-wrap .col-right .member-bd .hello{
+    display: block;
+    height: 17px;
+    line-height: 17px;
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+}
+.wrapper .screen-box-wrap .col-right .member-bd p{
+    width: 290px;
+    height: 17px;
+    line-height: 17px;
+    text-align: center;
+}
+
+.wrapper .screen-box-wrap .col-right .member-bd .icon,
+.wrapper .screen-box-wrap .col-right .member-bd .club{
+    display: inline-block; /*设置宽高(block)，在一行(inline)*/
+    height: 17px;
+    position: relative; /*子级元素要相对它绝对定位*/
+    color: #ff5000;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 0 10px 0 20px; /*让两个a元素中间有空隙*/
+    background: #ffe4db;
+    border-radius: 9px;
+
+}
+.wrapper .screen-box-wrap .col-right .member-bd .pic{
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("img/pics.png") no-repeat;
+}
+.wrapper .screen-box-wrap .col-right .member-bd .icon .pic{
+    background-position: 0 -527.5px;
+}
+.wrapper .screen-box-wrap .col-right .member-bd .club .pic{
+    background-position: 0 -528px;
+}
+
+.wrapper .screen-box-wrap .col-right .member .member-ft{
+    width: 290px;
+    height: 40px;
+    text-align: center; /*内部的a子元素水平对齐*/
+    margin-top: 8px; /*让它和member-bd垂直方向拉开距离*/
+}
+.wrapper .screen-box-wrap .col-right .member .member-ft a{
+    display: inline-block; /*原本为行级元素，需要设置宽高*/
+    width: 75px;
+    height: 25px;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(to right,#ff5000 0,#ff6f06 100%);
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 4px;
+    margin-right: 7px;
+}
+.wrapper .screen-box-wrap .col-right .member .member-ft a .login
+{
+    width: 92px;
+
+}
+.wrapper .screen-box-wrap .col-right .message{
+    width: 290px;
+    height: 26px;
+    background-color: #ffe4db;
+}
+.wrapper .screen-box-wrap .col-right .message a{
+    color: #ff5000;
+    text-align: center;
+    line-height: 26px;
+    position: relative;
+    padding-left: 82px;
+    font-size: 12px;
+}
+.wrapper .screen-box-wrap .col-right .message a span{
+    position: absolute;
+    top:4px;
+    right: -35px;
+    width:7px;
+    height: 10px;
+    background: url("img/ysj.png") no-repeat;
+    background-size: 100% 100%;
+}
+.wrapper .screen-box-wrap .col-right .notice{
+    width: 290px;
+    height: 98px;
+    padding-top: 10px;
+    /* border-bottom: 1px solid black; 调试使用 */
+}
+.wrapper .screen-box-wrap .col-right .notice li{
+    float: left;
+}
+.wrapper .screen-box-wrap .col-right .notice .title{
+    /* width: 290px; 不设置，和父级宽度一致*/
+    height: 24px;
+    margin-top: 4px;
+    padding: 0 8px;
+    /* border-bottom: 1px solid black; 调试使用 */
+}
+.wrapper .screen-box-wrap .col-right .notice .title li{
+    width: 32px;
+    line-height: 20px;
+    margin: 0 11px;
+    text-align: center;
+}
+.wrapper .screen-box-wrap .col-right .notice .title li a{
+    color: #3c3c3c;
+    font-size: 14px;
+}
+/*并列选择器：用多个条件写在一起，中间不加空格，各条件是与的关系*/
+.wrapper .screen-box-wrap .col-right .notice .title li.select{
+    font-weight: 700px;
+    border-bottom: 2px solid #f40; /*将border-bottom放在外边的li元素里，不放在里面的a元素里，更宽些*/
+}
+
+.wrapper .screen-box-wrap .col-right .notice .con li{
+    width: 130px;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+.wrapper .screen-box-wrap .col-right .notice .con li a{
+    color: #3c3c3c;
+    font-size: 12px; /*调大了文字显示不全*/
+}
+.wrapper .screen-box-wrap .col-right .notice .con li .select{
+    color: #ff5000;
+}
+/*选中li时，将里面的a字体颜色变色，用a:hover好像不行*/
+.wrapper .screen-box-wrap .col-right .notice li:hover a{
+    color: #ff5000;
+}
+.wrapper .screen-box-wrap .col-right .module{
+    width: 290px;
+    height: 232px;
+    border-top: 1px solid #f4f4f4;
+    /* 利用浮动，定宽，这样li元素一行放不下，会自动分行 */
+}
+/* 利用浮动，定宽，这样li元素一行放不下，会自动分行 */
+.wrapper .screen-box-wrap .col-right .module li{
+    float: left;
+    width: 71px;
+    height: 75px;
+    border-right: 1px solid #f4f4f4;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.wrapper .screen-box-wrap .col-right .module li a{
+    display: block; /*不能是inline-block，因为它要独占一行*/
+    text-align: center;
+
+}
+.wrapper .screen-box-wrap .col-right .module li a span{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url("img/pics.png") 100% 100% no-repeat;
+    margin-top: 10px; /*加入它，让它们间隔宽些*/
+}
+.wrapper .screen-box-wrap .col-right .module li a .pic1{
+    background-position: 0px 0px;
+}
+.wrapper .screen-box-wrap .col-right .module li a .pic2{
+    background-position: 0px -85px;
+}
+.wrapper .screen-box-wrap .col-right .module li a .pic3{
+    background-position: 0px -44px;
+}
+.wrapper .screen-box-wrap .col-right .module li a .pic4{
+    background-position: 0px -132px;
+}
+.wrapper .screen-box-wrap .col-right .module li a .pic5{
+    background-position: 0px -176px;
+}
+.wrapper .screen-box-wrap .col-right .module li a .pic6{
+    background-position: 0px -220px;
+}
+.wrapper .screen-box-wrap .col-right .module li a .pic7{
+    background-position: 0px -264px;
+}
+.wrapper .screen-box-wrap .col-right .module li a .pic8{
+    background-position: 0px -308px;
+}
+.wrapper .screen-box-wrap .col-right .module li a .pic9{
+    background-position: 0px -352px;
+}
+.wrapper .screen-box-wrap .col-right .module li a .pic10{
+    background-position: 0px -396px;
+}
+.wrapper .screen-box-wrap .col-right .module li a .pic11{
+    background-position: 0px -440px;
+}
+.wrapper .screen-box-wrap .col-right .module li a .pic12{
+    background-position: 0px -484px;
+}
+.wrapper .screen-box-wrap .col-right .module li a p{
+    color: #3c3c3c;
+    font-size: 12px;
+    line-height: 24px;
+}
+.wrapper .screen-box-wrap .col-right .module li a:hover p
+{
+    color: #ff5000;
+
+}
+.wrapper .screen-box-wrap .col-right .app{
+    height: 100px;
+    width: 290px;
+}
+.wrapper .screen-box-wrap .col-right .app h3{
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 14px;
+    position: relative;
+}
+.wrapper .screen-box-wrap .col-right .app h3 a{
+    position: absolute;
+    right: 10px;
+    color: #3c3c3c;
+}
+.wrapper .screen-box-wrap .col-right .app ul{
+    height: 84px;
+    padding-left: 23px;
+
+}
+.wrapper .screen-box-wrap .col-right .app ul li{
+    float: left; /*让li按从左往右排列（和写作时书写顺序一样）*/
+    width: 32px;
+    height: 32px;
+    margin-right: 21px;
+    margin-bottom: 8px;
+}
+.wrapper .screen-box-wrap .col-right .app ul li img{
+    width: 32px;
+    height: 32px;
+}

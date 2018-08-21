@@ -1,0 +1,15 @@
+/*img{
+	width: 100px;
+	float: left; 如果不加float: left属性，文字将和图片底部对齐，加了该属性后，文字和图片顶部对齐。
+	margin-right: 20px;
+}*/
+.img1{
+	margin-right: 10px;
+	float: left;
+	width: 100px;
+}
+.img2{
+	margin-right: 10px;
+	float: right;
+	width: 150px;
+}

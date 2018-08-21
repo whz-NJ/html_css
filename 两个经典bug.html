@@ -1,0 +1,35 @@
+<html lang="en">
+<head>	<meta charset="utf-8">
+	<title>document</title>
+	<link rel="stylesheet" type="text/css" href="两个经典bug.css">
+</head>
+<body>
+	<!-- bug1：margin塌陷：父级元素的顶棚好像不存在了（子元素的margin-top好像不生效，子元素的margin-top只有设置大于父元素的margin-top时，父子元素一起往下移，取父子元素的最大值作为margin-top -->
+	<div class="wrapper">
+		<div class="content"></div>
+	</div>
+<!-- 	解决方法1：在父级元素加一个border-top:1px solid red； 属性。 不专业，并且多一个像素高度-->
+<!-- 解决方法2：BFC：block format context（块级格式化上下文），设置父级的BFC -->
+<!-- 如何触发一个盒子的bfc：
+设置如下任一属性：
+1、position:absolute;
+2、display:inline-block;
+3、float:left/right;
+4、overflow:hidden; 
+这样，当前元素margin-top丢失问题就能解决了，因为上面解决办法都会有副作用，结合实际场景确定使用哪种方式引入BFC。
+-->
+<span class="box1">123</span>
+<span class="box2">234</span>
+<!-- bug2：兄弟结构，它们垂直方向的margin是合并的。上面兄弟设置margin-bottom后，下面的兄弟的margin-top必须必上面兄弟的margin-bottom大才生效。-->
+<div class="demo1">1</div>
+<div class="demo2">2</div>
+<!-- 解决bug2方法：将下面兄弟放入带有BFC属性的父级，或是把它们都放入相同的BFC父级，这样margin就变成累加，而不是合并了 -->
+<div class="demo3">3</div>
+<div class="wrapper2">
+	<div class="demo4">4</div>
+</div>
+<!-- 但bug2的解决办法不推荐，因为它加了父级，修改了html结构，这是一般不允许的，可以通过修改margin方式解决：比如要让上面兄弟和下面兄弟距离300px，不要在下面兄弟加100px，上面兄弟加200px，而是直接上面兄弟的margin-bottom设置为300px。 -->
+<!-- bug1由于只是通过修改css就能解决，并且无法通过数学计算方式绕过，一般都允许引入BFC方式解决 -->
+</body>
+
+</html>

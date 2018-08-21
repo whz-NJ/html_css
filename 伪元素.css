@@ -1,0 +1,8 @@
+
+/*通过after伪元素清除浮动流*/
+span::before{
+	content: "成哥"； /*属性必须设置*/
+	display: inline-block;/*默认为inline*/
+	width: 100px;
+	height: 100px;
+}

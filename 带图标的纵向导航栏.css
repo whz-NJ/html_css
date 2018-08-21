@@ -1,0 +1,34 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+div{
+	padding: 0 10px; /*左右留白*/
+	width:200px;
+	line-height: 20px;
+	height: 20px; /* 通过line-heigth=height，达到垂直居中*/
+	background: linear-gradient(to bottom, blue, white);
+	color: rgba(255,255,255,0.8); /*带透明色*/
+	font-size: 12px;
+	/*text-align: center;*/
+}
+div::before{
+	content: "";
+	display: inline-block;
+	width: 12px;
+	height: 11px;
+	background-image: url(http://gw.alicdn.com/tps/i3/TB1yeWeIFXXXXX5XFXXuAZJYXXX-210-210.png_160x160.jpg);
+	background-size: 100% 100%;
+	margin-right: 5px;
+	vertical-align: -1px;/*通过控制台微调*/
+}
+div::after{
+	display: inline-block;
+	content: "";
+	width: 6.5px;
+	height: 11.5px;
+	background-size: 100% 100%;
+	background-image: url(file://c:/a/右箭头.png);
+	float: right;
+	margin-top: 3px;
+}

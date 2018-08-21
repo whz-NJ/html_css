@@ -1,0 +1,30 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.wrapper{
+	width: 320px;
+	/*border: 2px solid black;*/
+}
+.wrapper:hover{
+	width: 400px;
+}
+.wrapper .img {
+	width: 100px;
+	height: 100px;
+	float: left;
+}
+.content1{
+	font-size: 20px;
+	line-height: 20px;
+	height: 40px; /*达到最多两行的效果*/
+	overflow: hidden;
+	color: #333;
+	margin-bottom: 8px;
+}
+
+.content2{
+	font-size: 12px;
+	color: #666;
+	line-height: 1.2em
+}

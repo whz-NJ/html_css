@@ -1,0 +1,26 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+/*第三个问题*/
+/*span{
+	float: left;
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-color: red;
+}*/
+/*第四个问题*/
+/*span{
+	font-size: 50px;
+}
+img{
+	width: 100px;
+}*/
+span{
+	display: inline-block;
+	background-color: red;
+	font-size: 50px;
+	vertical-align: 0px;/*相对于文字底部上下偏移的距离，还有middle--中部对齐*/
+}

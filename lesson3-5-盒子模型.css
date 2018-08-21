@@ -1,0 +1,37 @@
+/*盒子模型的展示*/
+/*div{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	border: 10px solid black;
+	padding: 10px 20px 30px;
+	margin: 10px 20px;
+}*/
+/*上面的盒子可视区（人眼看到的盒子）大小：
+宽：width + padding-left + padding-right + border-left + border-right
+    100px       20px         20px           10px         10px
+高： height + padding-top + padding-bottom + border-top + border-bottom
+     100        10px         30px          10px         10px 
+即不能算margin值，margin是盒子和墙（其父容器）之间的距离，不是人眼可以看到的盒子部分*/
+
+
+/*盒子嵌套盒子，里面盒子和外面盒子的width/height一样，
+外部盒子设置padding,这样里面盒子就在外边盒子中间位置*/
+.wrapper {
+	border: 10px green solid;
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	padding: 100px 150px 200px 250px;/* （顺序：上右下左，顺时针） */
+	/*如果padding为三个/3个值时，则中间那个值代表左右padding，保持左右padding相等，居中对齐*/
+	/*如果padding为两个值，则第一个代表上下，第二个值代表左右*/
+	/*margin和padding类似*/
+/*	border-width也有四个值，并且可以通过border-top-width/border-bottom-width
+	border-left-width/border-right-width分别设置。*/
+}
+.content {
+	width: 100px;
+	height: 100px;
+	background-color: gray;
+}
+

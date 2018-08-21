@@ -1,0 +1,22 @@
+<html lang="en">
+<head>	<meta charset="utf-8">
+	<title>document</title>
+	<link rel="stylesheet" type="text/css" href="浮动元素对自适应容器的影响.css">
+</head>
+<body>
+<!-- 	自适应容器：不指定宽/高，此时它的宽度没有限制，高度由其内容决定。 -->
+ <div class="wrapper">
+	<div class="content">1</div>
+	<div class="content">2</div>
+	<div class="content">3</div>
+<!-- 	在浮动元素最后加入清除浮动流的元素，父级元素就可以包裹前面的浮动元素了。-->
+	<!-- <p class="clear"></p> -->
+</div>
+<!-- 由于父级元素（div.wrapper）是块级元素，它看不到浮动元素，所以如果将div.content元素设置float:left，此时div.content无法撑开div.wrapper了。
+ -->
+<!-- 此时可以添加边框宽度为0的p元素，设置clear为both，就可以达到上面的效果（消除前面浮动元素的浮动流的影响）  -->
+<!-- 但上面的方法不推荐，修改了HTML的结构，并且加入的p元素没有任何语法意义。 -->
+<span>123</span>
+</body>
+
+</html>

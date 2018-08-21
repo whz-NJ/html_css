@@ -1,0 +1,33 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+div{
+	padding: 10px 10px; /*左右上下留白*/
+	width:200px;
+	height: 12px;
+	font-size: 12px;
+	line-height: 12px;/*容器高度=字体高度，然后通过padding，将上下留白，达到字体居中效果*/
+	background: linear-gradient(to bottom, green, blue);
+	color: rgba(255,255,255,0.5); /*带透明色*/
+
+	/*text-align: center;*/
+}
+div::before{
+	content: "";
+	display: inline-block;
+	width: 12px;
+	height: 11px;
+	background-image: url(http://gw.alicdn.com/tps/i3/TB1yeWeIFXXXXX5XFXXuAZJYXXX-210-210.png_160x160.jpg);
+	background-size: 100% 100%;
+	margin-right: 5px;
+}
+div::after{
+	display: inline-block;
+	content: "";
+	width: 6.5px;
+	height: 11.5px;
+	background-size: 100% 100%;
+	background-image: url(file://c:/a/右箭头.png);
+	float: right; /*浮动不会浮动到padding里*/
+}

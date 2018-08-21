@@ -1,0 +1,21 @@
+*{
+	margin:0;
+	padding: 0;
+}
+.single-line{
+	width: 300px;
+	height: 20px;
+	line-height: 20px;
+	/*border: 1px solid black;开发临时使用的边框，用于定位*/
+	/*处理单行文本溢出的三件套：*/
+	white-space: nowrap;/*取消换行*/
+	overflow: hidden;/*内容溢出部分不展示*/
+	text-overflow: ellipsis;/*文字溢出部分用...代替*/
+}
+.multi-lines{
+	width: 300px;
+	height: 40px;
+	line-height: 20px;/*height是line-height的多少倍，就展示多少行*/
+	border: 1px solid black;
+	overflow: hidden;
+}

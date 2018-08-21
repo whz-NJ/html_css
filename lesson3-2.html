@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="lesson3-2.css">
+</head>
+<body>
+<div class="wrapper"><strong class="box"><em>123</em></strong></div>
+<em>234</em> <!-- em表示斜体 -->
+<!-- 间接子孙关系也是生效的 -->
+<div><em>1</em><strong><em>2</em></strong></div>
+<!-- 直接子元素选择器 -->
+<div>
+	<em>22</em>
+	<strong>
+		<em>33</em>
+	</strong>
+</div>
+
+<!-- 以下三个元素，使用父子选择器，无法精准定位到中间那个元素，除非通过id选择器，或是通过并列选择器-->
+<div>1</div>
+<div class="demo">2</div>
+<p class="demo">3</p>
+
+<div class="wrapper">
+	<div class="content">
+		<em class="box" id="only"></em>
+	</div>
+</div>
+
+<div class="classDiv" id="idDiv">
+	<p class="classP" id="idP">1</p>
+</div>
+
+<em>1</em>
+<strong>2</strong>
+<span>3</span>
+<div class="demo1">1</div>
+<div class="demo2">2</div>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+/*先写css定义功能，再在html通过class属性引用*/
+.red {
+	background-color: red;
+}
+.green {
+	background-color: green;
+}
+.gray {
+	background-color: gray;
+}
+.size1{
+	width: 100px;
+	height: 100px;
+}
+.size2{
+	width: 200px;
+	height: 200px;
+}
+.size3{
+	width: 300px;
+	height: 300px;
+}
+
+/*定义html预定义标签的初始样式，初始化标签，初始化样式*/
+em{
+	font-style: normal;
+    color: #c00;
+}
+a{
+	text-decoration: none;
+	color: #424242;
+}
+ul{
+	list-style: none;
+	padding: 0;
+	margin:0;
+}
+/*通过通配符选择器，将原有html标签的padding/margin都设置为0，
+然后各种标签自定义自己的padding/margin，不用html自带的属性值。
+并且它的权重为0，不影响其他选择器设置的属性*/
+*{
+	padding: 0;
+	margin: 0;
+}

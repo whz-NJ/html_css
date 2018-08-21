@@ -1,0 +1,50 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8"> 
+		<title>Document</title>
+		<link rel="stylesheet" href="lesson2-3-css企业开发经验、习惯，盒子模型，层模型.css">
+	</head>
+	<body>
+
+	<!-- 	<div>当国。​​​​企业开发经验、习惯，盒子模型，层模型</div> -->
+<!-- 	<del>原件50元</del>
+	<span>原件50</span>
+	<a href="www.baidu.com">www.baidu.com</a>
+	<span>www.baidu.com</span> -->
+<!-- <a href="www.baidu.com">www.baidu.com</a> -->
+
+<!-- 行间样式权重为100，比伪类/标签选择器权重大所以光标挪上去没有下划线 -->
+<!-- <a style="text-decoration: none" href="www.baidu2.com">www.baidu2.com</a> -->
+
+<!-- 	1、行级元素/内联元素/inline
+	特点：内容决定元素所占位置
+	     不可以通过css改变宽高
+	     比如span/strong/em/a/del
+	2、块级元素 block
+	特点：独占一行（可以设置background-color属性看到它占满一行
+	      可以通过css改变宽高
+	      比如div/p/ul/li/ol/form/address
+	3、行级块元素 inline-block
+	特点：内容决定大小
+	      可以改宽高
+	      比如img
+	       -->
+	<span>Hello</span>hhhhh
+	<div>Hello2</div>vvvvv
+<!-- img标签可以通过css修改宽高，并且一般只指定其中一个，另外一个按照原图片尺寸缩放，另外它可以和其他文字在一行，所以它是行级元素，但又能修改宽高，所以它是特殊的行级元素：行级块元素 -->
+<!-- 虽然这些元素是html元素，但实际都是通过css的display属性设置的，比如行级元素的display属性为inline，块级元素的display属性为block，行级块元素的display属性为inline-block。 -->
+
+<!-- 凡是带有inline属性的元素，都有文字属性，不同行的img，相当于一个空格（英文分词），中间需要有分割（4px） -->
+<img src="wqy.jpg"><img src="wqy.jpg"><img src="wqy.jpg"><img src="wqy.jpg">
+<!-- 解决办法，将img元素并排放，中间不要有空格，或是设置margin-left和border css属性。 -->
+
+<!-- 压缩的第一个手段是gzip压缩。将img用一个字母代替。
+压缩的第二个手段是去空格、去回车（代码上传服务器时自动进行），比如：
+<img src="wqy.jpg">
+<img src="wqy.jpg">
+<img src="wqy.jpg">
+<img src="wqy.jpg">
+上传服务器后，变成：<img src="wqy.jpg"><img src="wqy.jpg"><img src="wqy.jpg"><img src="wqy.jpg">。 所以正规的办法是删除img之间的空格/回车即可，而不是再此基础上再调整margin-left和border css属性值-->
+
+</body>
+</html>

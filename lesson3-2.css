@@ -1,0 +1,74 @@
+/*父子选择器|派生选择器*/
+/*父子选择器不一定非要用标签选择器*/
+.wrapper .box em {
+	background-color: red;
+}
+/*间接子孙关系也是生效的*/
+div em {
+	background-color: red;
+}
+/*直接子元素选择器*/
+/*div下面的儿子（直接子元素，不是孙子）为em的元素才被选择*/
+div > em{
+	background-color: green;
+}
+
+section div ul li a em {
+	background-color: red;
+}
+/*并列选择器：用多个条件写在一起，中间不加空格，各条件是与的关系*/
+div.demo{
+	background-color: yellow;
+}
+
+#only{
+	background-color: blue;
+}
+.content em{
+	background-color: green;
+}
+.wrapper > .content > .box {
+	background-color: gray;
+}
+/*并列选择器中，标签选择器和class选择器并列，标签选择器需要放在class选择器前面，否则浏览器把整个作为class选择器了*/
+/*比如下买的div.wrapper，不能写为.wrapperdiv*/
+/*id选择器和class选择器之间顺序无所谓，浏览器可以区分开来*/
+div.wrapper > div[class="content"] > div#only.box 
+{
+
+}
+/* 只要写在同一行的选择器（父子选择器、并列选择器），将各子选择器权重相加，得到当前组合选择器的权重，权重大的优先级高。 */
+/* 正无穷加1 > 正无穷 */
+/*如果权重相同，后面的选择器结果覆盖前面的选择器结果。*/
+/* 100 1 */
+#idDiv p.classP {
+	background-color: red!important;
+}
+/* 1 10 100 */
+div .classP#idP{
+	background-color: green!important;
+}
+
+/* 分组选择器 */
+/* 如果多个选择器公用相同的代码，不同选择器间通过逗号分隔 */
+/* 如果一个选择器表达式很长，可以把各个选择器分行写 */
+em,strong,span{
+	background-color: red;
+}
+/* em strong > .demo,
+strong,
+span{
+	background-color: red;
+} */
+/* 不同选择器设置不同属性时，不会把其他选择器的其他属性覆盖
+ */.demo1{
+	background-color: red;
+}
+.demo2{
+	background-color: green;
+}
+.demo1,
+.demo2{
+	width:100px;
+	height: 100px;
+}

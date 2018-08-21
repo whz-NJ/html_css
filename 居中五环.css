@@ -1,0 +1,57 @@
+*{
+	margin:0;
+	padding: 0;
+}
+/*如果不指定plat的position属性，由于plat的内容（五个环是绝对定位元素）
+和plat不在一个平面，所以plat没有被它们撑开。绝对定位元素是脱离原来的层次
+的，相对于有定位的父级元素，原来同级元素看不到它们*/
+
+.plat{
+	border: 5px solid black; /*调整居中后，删除border，让它不可见*/
+	position: absolute;
+	width: 380px;
+	height: 186px;
+	left: 50%;
+	top: 50%;
+	margin-left: -190px;
+	margin-top: -93px;
+}
+
+/*分组选择器，简化代码*/
+.circle1,
+.circle2,
+.circle3,
+.circle4,
+.circle5{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border: 10px solid black;
+	border-radius: 50%;
+}
+.circle1{
+	border-color: red;
+	left:0;
+	top:0;
+}
+.circle2{
+	border-color: green;
+	left:130px;
+	top:0;
+	z-index: 3;
+}
+.circle3{
+	border-color: yellow;
+	left:260px;
+	top:0;
+}
+.circle4{
+	border-color: blue;
+	left:65px;
+	top:70px;
+}
+.circle5{
+	border-color: purple;
+	left:195px;
+	top:70px;
+}

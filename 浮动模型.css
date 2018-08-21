@@ -1,0 +1,35 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.wrapper{
+	width: 350px;
+	height: 300px;
+	border: 1px solid black;
+}
+.content {
+	color:#fff;
+	float: left; /*加入该属性后，之前div的行级元素独占一行没有了，变成一排，并且从左往右排列（和写作时书写顺序一样）*/
+	             /*还有一个属性值：right，此时变成从右往左排列了*/
+	background-color: black;
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 100px;
+	height: 100px;
+}
+
+/*上面一个兄弟带有float属性，下面兄弟没有带，则下面兄弟也重用了上面兄弟的位置（和position类似，好像也分层了，但实际没有分层，只是产生了浮动流）*/
+.box{
+	float: left;
+	width: 100px;
+	height: 100px;
+	background-color: black;
+	opacity: 0.5;
+}
+.demo{
+	/*float: left;产生了BFC*/
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	background-color: green;
+}

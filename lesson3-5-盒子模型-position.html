@@ -1,0 +1,34 @@
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="lesson3-5-盒子模型-position.css">
+	</head>
+
+	<body>
+		<!-- absolute -->
+<!-- 		当一个元素position为absolute时，它将脱离原来的层(脱离原来的位置进行定位），进入新的层，每一个absolute元素都是一个新的层。这样下面box盒子和demo盒子位置重叠（因为demo盒子原来的位置可以被box盒子占用 -->
+<!-- absolute：相对于最近的有定位的父级（带有position: relative属性）进行定位，如果没有，相对于文档进行定位 -->
+        <!-- <div></div> -->
+<!--         <div class="demo"></div>
+<div class="box"></div> -->
+
+<!-- relative -->
+<!-- 当一个元素position为relative时，保留原来的位置进行定位，这样下面demo和box盒子位置不重叠，box盒子没有使用demo盒子原来的位置-->
+<!-- <div class="demo"></div>
+<div class="box"></div>  -->
+
+<!-- absolute：相对于最近的有定位的父级（带有position: relative或absolute属性）进行定位，如果没有，相对于文档进行定位 -->
+<!-- relative：相对于原来的位置进行定位（根据left/top/right/bottom属性进行偏移，如果没有设置这些属性，还在原来位置） -->
+<!-- 定律：用relative作为参照物，用absolute进行定位。 -->
+<!-- position属性还有一个取值：fixed，它和absolute类似，但它是相对于可视区窗口的定位，设置其left/top/right/bottom后，不论文档如何滚动，它在屏幕的位置不变（广告定位） -->
+
+<!-- <div class="wrapper">
+	<div class="content">
+		<div class="box"></div>
+	</div>
+</div> -->
+<div></div>
+
+	</body>
+</html>

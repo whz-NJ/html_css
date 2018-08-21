@@ -1,0 +1,52 @@
+
+/*1.id选择器*/
+#only {
+	background-color: red;
+}
+#onlyU {
+	background-color: green;
+}
+/*2、class选择器*/
+/*.demo {
+	background-color: yellow;
+}
+.demo1 {
+	background-color: orange;
+}*/
+/*3、标签选择器*/
+/*div{
+		  width: 100px;
+          height: 100px;
+          border-radius: 70%;
+          background-color: black;
+}
+span {
+	color:#F40;
+	font-weight: bold;
+}*/
+/*4、通配符选择器*/
+/** {
+	background-color: green;
+}*/
+
+/*id选择器的优先级最高，当不同选择器设置元素相同属性时，优先级高的生效。*/
+/*属性选择器（有指定的属性，不关心其值，当然也可以设置选择器的选择元素的属性值）*/
+/*class选择器是属性选择器的特例：固定通过class属性选择元素*/
+[class="demo"] {
+	background-color: red;
+}
+/*属性选择器和class选择器优先级相同，此时谁在css文件里先出现，谁的优先级就高。 */
+
+/*important修饰的属性优先级最高（比行间样式优先级都高）*/
+div{
+	background-color: green!important;
+}
+
+/*选择器优先级排序：!important > 行间样式 > id > class|属性 > 标签选择器 > 通配符*/
+/*css选择器权重（256进制）：
+!important     Infinity
+行间样式         1000
+id选择器          100
+class|属性|伪类   10
+标签|伪元素         1
+通配符             0*/
