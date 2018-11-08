@@ -20,7 +20,9 @@ border-width: 10px;
 	height: 20px;
 	text-indent: 2em; 首行缩进2个字
 } */
-
+body{
+    font-size:20px;
+}
 /* 单位：绝对单位，相对单位 
 px是相对单位：相对屏幕，一个像素只能展示一个颜色
 分辨率：垂直方向每英寸可以容纳的像素点数。
@@ -62,10 +64,15 @@ border-radius: 10px;
 }
 /*span是行级元素，无法调整宽高*/
 span{
+    text-indent:2em;
 	width: 100px;
 	height: 100px;
 	display: block;
 	background-color: red;
+}
+span::first-letter {
+font-size:200%;  /*基于父元素的一个百分比值。*/
+color:#8A2BE2;
 }
 /*虽然这些元素是html元素，但实际都是通过css的display属性设置的，比如行级元素的display属性为inline，块级元素的display属性为block，行级块元素的display属性为inline-block。 */
 div{
