@@ -7,7 +7,10 @@
 	<body>
        <!-- 这个 div的border很宽，并且border-left-color为transparent，所以就出现上/右/下三个三角形-->
        <!--另外overflow的属性默认为visible ，所以即使wide/height很小，但还是呈现列的方式展示出文字-->
-       <!--block类型元素，通过background-color占满整行，background和content区域是重叠（大小位置一样）的。-->
+       <!--block类型元素，通过background-color占满整行，background-color=content+border+padding。-->
+       <!-- background-image = content+padding -->
+       <!-- 这里的 div 设置了width/height/border（小于一行宽度），padding没有设置为0，所以backgroundcolor也没有占满一行，但实际div还是占满了一行-->
+       <!-- 如果不设置width，div的width会自动设置为一行宽度 -->
 		<div style="background-color: #444;">举个例子</div>
 		<!-- strong html标签天生带font-weight:bold属性 -->
 		<strong>举个例子</strong>
