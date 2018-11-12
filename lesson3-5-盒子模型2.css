@@ -1,12 +1,15 @@
 .content1{
 	width: 10px;
 	height: 10px;
+    /*background-color = content+padding+border,这样内容区域颜色和background-color是一样的*/
 	background-color: #0f0;
 }
 .content{
 	width: 10px;
 	height: 10px;
 	padding: 10px;
+    /*background-color = content+padding+border,content和.content1盒子重叠，padding显示为background-color*/
+    /*盒子嵌套，marging会合并 http://www.w3school.com.cn/css/css_margin_collapsing.asp*/
 	background-color: #000;
 }
 .box{

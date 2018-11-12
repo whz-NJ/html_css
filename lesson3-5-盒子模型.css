@@ -32,6 +32,8 @@
 .content {
 	width: 100px;
 	height: 100px;
+    /*background-color=content+padding+border*/
 	background-color: gray;
+    
 }
 
