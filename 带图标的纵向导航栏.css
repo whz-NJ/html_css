@@ -20,7 +20,7 @@ div::before{
 	background-image: url(http://gw.alicdn.com/tps/i3/TB1yeWeIFXXXXX5XFXXuAZJYXXX-210-210.png_160x160.jpg);
 	background-size: 100% 100%;
 	margin-right: 5px;
-	vertical-align: -1px;/*通过控制台微调*/
+	vertical-align: -1px;/*调整垂直方向位置，通过控制台微调*/
 }
 div::after{
 	display: inline-block;
@@ -28,7 +28,7 @@ div::after{
 	width: 6.5px;
 	height: 11.5px;
 	background-size: 100% 100%;
-	background-image: url(file://c:/a/右箭头.png);
+	background-image: url(file:img/右箭头.png);
 	float: right;
 	margin-top: 3px;
 }

@@ -36,16 +36,16 @@
 <!-- 虽然这些元素是html元素，但实际都是通过css的display属性设置的，比如行级元素的display属性为inline，块级元素的display属性为block，行级块元素的display属性为inline-block。 -->
 
 <!-- 凡是带有inline属性的元素，都有文字属性，不同行的img，相当于一个空格（英文分词），中间需要有分割（4px） -->
-<img src="wqy.jpg"><img src="wqy.jpg"><img src="wqy.jpg"><img src="wqy.jpg">
+<img src="img/wqy.jpg"><img src="img/wqy.jpg"><img src="img/wqy.jpg"><img src="img/wqy.jpg">
 <!-- 解决办法，将img元素并排放，中间不要有空格，或是设置margin-left和border css属性。 -->
 
 <!-- 压缩的第一个手段是gzip压缩。将img用一个字母代替。
 压缩的第二个手段是去空格、去回车（代码上传服务器时自动进行），比如：
-<img src="wqy.jpg">
-<img src="wqy.jpg">
-<img src="wqy.jpg">
-<img src="wqy.jpg">
-上传服务器后，变成：<img src="wqy.jpg"><img src="wqy.jpg"><img src="wqy.jpg"><img src="wqy.jpg">。 所以正规的办法是删除img之间的空格/回车即可，而不是再此基础上再调整margin-left和border css属性值-->
+<img src="img/wqy.jpg">
+<img src="img/wqy.jpg">
+<img src="img/wqy.jpg">
+<img src="img/wqy.jpg">
+上传服务器后，变成：<img src="img/wqy.jpg"><img src="img/wqy.jpg"><img src="img/wqy.jpg"><img src="img/wqy.jpg">。 所以正规的办法是删除img之间的空格/回车即可，而不是再此基础上再调整margin-left和border css属性值-->
 
 </body>
 </html>

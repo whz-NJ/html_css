@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Demo</title>
+    <style>
+ 
+        .boimg{
+            border: 6px solid #fff;
+            width: 400px;
+            height:225px;
+            margin: 50px;
+            position: relative;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+        .boimg img{width:100%;heigth:100%;}
+        .boimg:before,.boimg:after {
+            content: "";
+            width: 400px;
+            height:225px;
+            background: #aaa;
+            border: 6px solid #fff;
+            position:absolute;
+            z-index:-1;
+            top:0;
+            left:-10px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            transform: rotate(-5deg);
+        }
+        .boimg:after {
+            top:5px;
+            left:0;
+            transform: rotate(3deg);
+        }
+    </style>
+</head>
+<body>
+<div class="shbox" style="background:none;">
+    <div class="boimg">
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1522834445084&di=376ed78bccfc705f2601b73956199600&imgtype=0&src=http%3A%2F%2Fimg2015.zdface.com%2F20170623%2F25985f40a751689774e53c2e16f266ee.jpg" />
+        <div>
+        </div>
+    </div>
+</div>
+ 
+ 
+</body>
+</html>

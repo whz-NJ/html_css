@@ -3,16 +3,19 @@
 	padding: 0;
 }
 div{
-	padding: 10px 10px; /*左右上下留白*/
-	width:200px;
-	height: 12px;
+	padding: 10px 10px;  /*左右上下留白*/
+	width:250px;
+	height: 15px;
 	font-size: 12px;
 	line-height: 12px;/*容器高度=字体高度，然后通过padding，将上下留白，达到字体居中效果*/
-	background: linear-gradient(to bottom, green, blue);
-	color: rgba(255,255,255,0.5); /*带透明色*/
+	background: linear-gradient(to bottom, green, blue); 
+    /* background-image: url(file:img/wqy.jpg);
+    background-size: 100% 100%; */
+	color: rgba(255,255,255,0.5); /*字体颜色带透明色*/
 
 	/*text-align: center;*/
 }
+/*before after 是在内容区（将width/height设置更大些，可以看到before/after被width/height设置的区域内）*/
 div::before{
 	content: "";
 	display: inline-block;
