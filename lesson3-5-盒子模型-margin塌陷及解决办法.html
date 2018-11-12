@@ -1,0 +1,22 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="lesson3-5-盒子模型-margin塌陷及解决办法.css">
+	</head>
+
+	<body>
+		<!-- 解决办法2：BFC：block format context -->
+		<!-- 
+			如何触发一个盒子的bfc（触发父级盒子为BFC渲染规则）方法（下面是或的关系）：
+			position: absolute;
+			display: inline-block;
+			float:left/right;
+			overflow:hidden;
+		-->
+<div class="wrapper">
+	<div class="content"></div>
+</div>
+        
+	</body>
+</html>

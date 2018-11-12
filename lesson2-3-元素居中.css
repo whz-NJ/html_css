@@ -1,0 +1,17 @@
+*{
+    margin: 0px; /*body默认margin为8px*/
+    padding: 0px;
+}
+
+div{
+    /* position: absolute; 相对于文档居中*/
+    /*相对于可视区居中*/
+    position: fixed;
+    left:50%;
+    top: 50%;
+    margin-left: -50px; /*为width的一半*/
+    margin-top: -50px; /*为height的一半*/
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}

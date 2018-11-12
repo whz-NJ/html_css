@@ -1,0 +1,18 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="lesson3-5-盒子模型-margin合并以及解决办法-BFC.css">
+	</head>
+
+	<body>
+    <!--水平方向的margin不合并-->
+<span class="box1">123</span>
+<span class="box2">234</span>
+<span class="demo1">1</span>
+<!--解决办法：将demo2加一个带有BFC属性的父级，或是把demo1和demo2都放入带有BFC属性的父级（比如一个overflow:hidden的父级）-->
+<!--一般margin合并不解决，因为引入了html元素，可能导致已经存在的css选择器失效-->
+<!--可以通过数学方法饶过去：div1和下面div2间隔300，而不是div1间隔100,div2间隔200-->
+<span class="demo2">2</span>
+	</body>
+</html>

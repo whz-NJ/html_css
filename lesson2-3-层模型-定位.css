@@ -1,0 +1,18 @@
+*{
+    margin: 0px; /*body默认margin为8px*/
+    padding: 0px;
+}
+
+.demo{
+    position: absolute;
+    /*left/top/right/bottom是当前容器最外层的margin相对于父容器content的偏移？？*/
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    opacity: 0.5;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: green;
+}
