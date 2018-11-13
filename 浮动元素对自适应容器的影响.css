@@ -22,11 +22,13 @@
 不过设置了position:absolute；或float:left/right属性后，
 系统会把元素转换为inline-block类型（如果不设置宽高，宽高由内容决定）。
 这样父级元素的边框将紧紧包裹其内容（相比通过after伪元素，边框要窄些）。*/
-span{
-	position: absolute;/* 如果不设置position:absolute属性，下面设置的宽高无效*/
+.foot{
+	/* 虽然设置了绝对定位，但没有设置left/top/right/bottom属性，还在原位置 */
+    position: absolute;/* 如果不设置position:absolute属性，下面设置的宽高无效*/
 	width: 100px;
 	height: 100px; 
 	background-color: red;
+    opacity: 0.5;
 }
 
 

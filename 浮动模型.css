@@ -27,8 +27,8 @@
 	opacity: 0.5;
 }
 .demo{
-	/*float: left;产生了BFC*/
-	display: inline-block;
+	/*float: left; 产生了BFC*/
+	display: inline-block; /*.demo没有产生BFC，所以老老实实排在文字“123”后面*/
 	width: 150px;
 	height: 150px;
 	background-color: green;

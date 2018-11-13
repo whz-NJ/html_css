@@ -6,7 +6,9 @@
 	</head>
 	<body>
 <!-- 		必须先写right（绝对定位元素），如果它后写，则相对位置在第二行（top取值在第二行） -->
-		<div class="right"></div>
+        <!--由于top没有设置，其值为auto，这样在html里如果right后写，垂直方向就在left的下方-->
+        <!--如果同时设置right的right/top值均为0，这样在html里就可以把right写在left后面了-->
+        <div class="right"></div>
 		<div class="left"></div>
 
 	</body>

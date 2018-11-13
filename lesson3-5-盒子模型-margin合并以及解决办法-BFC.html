@@ -5,6 +5,15 @@
 	<link rel="stylesheet" type="text/css" href="lesson3-5-盒子模型-margin合并以及解决办法-BFC.css">
 	</head>
 
+    		<!-- 解决办法2：BFC：block format context -->
+		<!-- 
+			如何触发一个盒子的bfc（触发父级盒子为BFC渲染规则）方法（下面是或的关系）：
+			position: absolute;
+			display: inline-block;
+			float:left/right;
+			overflow:hidden;
+		-->
+        
 	<body>
     <!--水平方向的margin不合并-->
 <span class="box1">123</span>
