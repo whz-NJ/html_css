@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    	<style>
+
+		#menu ul {
+		  font-family:Arial;
+		  font-size:14px;
+  		  padding:0 0 0 8px; 
+		  margin:0 auto;
+          list-style:none; 
+          height:35px; 
+          white-space:nowrap; /*即使li菜单项内容过长，也不允许在空白字符处换行*/
+          }
+		  
+	    #menu ul li {
+		  float:left; /*使得各列表横向排列，而不是默认的竖直排列*/
+		  margin:0 2px;
+		  }
+        /*第一层滑动门，即设置平常状态的背景图片*/
+	    #menu ul li a{
+		  display:block; 
+		  float:left; /*为了解决IE浏览器存在的问题(当鼠标指针移动到文字上面的时候，才会触发鼠标经过效果)*/
+  		  line-height:35px; /*高度为背景图片高度的1/3*/
+		  color:#666;
+		  text-decoration:none;
+		  padding:0 0 0 14px;
+		  background:url('background.gif');
+		  }
+
+		  
+		 #menu ul li a b{
+		  display:block;
+		  padding:0 14px 0 0;
+  		  background:url('background.gif') no-repeat right top;
+   		  }
+          
+        /*第二层滑动门，即设置鼠标经过效果*/
+		#menu ul li a:hover{
+		  color:#fff; 
+   		  background: url('background.gif') left center; /*图片垂直方向中心在padding+content垂直中心*/
+		  }
+		  
+	  	#menu ul li a:hover b{
+		  color:#fff; 
+   		  background: url('background.gif') no-repeat right center;
+	      }
+        
+        /*当前选定按钮，正常状态下的滑动门*/
+		#menu ul li.current a{
+		  color:#fff; 
+   		  background: url('background.gif') no-repeat left bottom;
+		  }
+
+		#menu ul li.current a b{
+   		  background: url('background.gif') no-repeat right bottom;
+		  }
+          
+        /*当前选定按钮，鼠标悬停时的滑动门*/
+		#menu ul li.current a:hover{
+   		  background: url('background.gif') no-repeat left bottom;
+   		  cursor:default;
+		  }
+
+		#menu ul li.current a:hover b{
+   		  background: url('background.gif') no-repeat right bottom;
+   		  cursor:default;
+   		  }
+
+
+
+   		</style>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>玻璃效果菜单(2)</title></head>
+
+<body>
+    <div id="menu">
+	<ul>
+	   <li><a href="#"><b> Home </b></a> </li>
+       <li><a href="#"><b> Contact Us </b></a></li>
+       <li><a href="#"><b> Web Dev </b></a></li>
+       <li><a href="#"><b> Web Design </b></a></li>
+       <li class="current"><a href="#"><b> Map </b></a></li>
+	</ul>
+    </div>
+</body>
+</html>
+

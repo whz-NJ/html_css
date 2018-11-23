@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>二级菜单</title>
+<style type="text/css">
+
+
+
+/* 整体设置*/ 
+#menu {
+	margin:0; 
+	padding:0;
+	width:610px;
+	list-style-type:none; 
+	font:14px Arial; 
+	}
+
+#menu li {
+	float:left; /*各菜单列表横向排列*/
+    padding:0; 
+	margin:0 1px 0 0; /*各菜单列表间间隔1px*/
+	width:150px;
+	}
+
+/* 设置菜单项*/
+#menu li dl { 
+	width:150px;/*ie6 bug*/
+    margin: 0; 
+	padding: 0 0 10px 0; /*10px的底部padding放背景图片（高5px），如果没有设置，背景将被内容覆盖，这里设置一个10像素的padding，即使鼠标稍稍超出菜单项范围，整个菜单也不至于立即消失*/
+	background: #cb6 url(images/bottom.gif) no-repeat bottom left; /*同时设置背景颜色/背景图片（高5px，仅底部两边有圆角的白色（和页面背景色相同），其他部分为透明色，这样就显出菜单列表背景色#cb6）*/
+	}
+
+
+#menu li dt a,#menu li dd a{ display:block;}
+
+
+/* 设置菜单项的dt */
+#menu li dt { 
+	margin:0; 
+    padding: 5px;  /*5px的顶部padding放背景图片（高5px）*/
+  	text-align:center;
+	border-bottom:1px solid #b00; /*让dt和下面第一dd有个暗红色分割线*/
+	background:#ed8 url(images/top.gif) no-repeat top left; /*同时设置背景颜色/背景图片（高5px，仅底部两边有圆角的白色（和页面背景色相同），其他部分为透明色，这样就显出菜单列表背景色#cb6）*/
+	}
+
+
+#menu li dt a ,#menu li dt a:visited {
+	display:block; 
+    color:#333;
+    text-decoration:none;
+	}
+
+	
+/* 设置菜单项的dd */
+#menu li dd { 
+
+	margin:0; 
+    padding:0; 
+	color: #fff; 
+	background: #47a; 
+	}
+
+#menu li dd.last {
+	border-bottom:1px solid #b00;
+	}
+
+#menu li dd a, #menu li dd a:visited {
+    height:1em;
+	display:block; 
+	color:#fff; 
+    text-decoration:none; 
+	padding:4px 5px 4px 20px; /*在a的padding位置显示背景图片（内容区域有文字，无法显示背景图片了）*/
+    background: #47a url(images/arrow.gif) no-repeat 10px 10px; /*形状为三角的背景图片(w4h7)，其他部分透明*/
+    }	
+
+
+</style>
+</head>
+
+<body>
+	<ul id="menu">
+		<li>
+			<dl>
+				<dt><a href="#">Artech Studio</a></dt>
+				<dd><a href="#">Web Dev</a></dd>
+				<dd><a href="#">Web Design</a></dd>
+				<dd><a href="#">Books</a></dd>
+				<dd class="last"><a href="#">Contact Us</a></dd>
+			</dl>	
+		</li>
+		<li>
+			<dl>
+				<dt><a href="#">Artech Store</a></dt>
+				<dd><a href="#">Books</a></dd>
+				<dd><a href="#">DVDs</a></dd>
+				<dd><a href="#">Movies</a></dd>
+				<dd class="last"><a href="#">Service</a></dd>
+			</dl>	
+		</li>
+		<li>
+			<dl>
+				<dt><a href="#">Artech Achi</a></dt>
+				<dd><a href="#">Landscape</a></dd>
+				<dd><a href="#">Plan</a></dd>
+				<dd><a href="#">Design</a></dd>
+				<dd class="last"><a href="#">Maps</a></dd>
+			</dl>	
+		</li>
+		<li>
+			<dl>
+				<dt><a href="#">Artech Science</a></dt>
+				<dd><a href="#">Physics</a></dd>
+				<dd><a href="#">Maths</a></dd>
+				<dd><a href="#">Chemistry</a></dd>
+				<dd class="last"><a href="#">Courses</a></dd>
+			</dl>	
+		</li>
+	</ul>
+</body>
+</html>

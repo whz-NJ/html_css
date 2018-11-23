@@ -1,0 +1,170 @@
+﻿<html>
+<head>
+<title>Calendar</title>
+<style>
+.month {
+	border-collapse: collapse; /*单元格边框为重合模式*/
+	table-layout:fixed; /*单元格固定大小，每列宽度相等，高度根据内容自动调整*/
+	width:780;
+}
+.month caption {
+	text-align: left;
+	font-family: "normal", "120%", "宋体", "arial"; /*设置一个可选的字体列表*/
+ 	font-size:12px;
+	font-weight:normal;
+	padding-bottom: 6px;
+}
+
+.month caption .date{
+    font-size:150%;
+    font-weight:bold;
+}
+
+.month th {
+	border: 1px solid #999;
+	border-bottom: none;
+	padding: 3px 2px 2px;
+	margin:0;
+	background-color: #ADD;
+	color: #333;
+	font: 80% 宋体;
+}
+.month td {
+	border: 1px solid #AAA;
+	font: 12px 宋体;
+    line-height:16px; /*而不同浏览器默认的行高有所不同，显式设置，保证td可以显式两行文字*/
+	padding: 2px 2px;
+	margin:0;
+	vertical-align: top;
+	}
+.month td.previous, .month td.next {
+	background-color: #eee;
+	color: #A6A6A6;
+}
+/*td对应日期有活动时，设置背景色和border*/
+.month td.active {
+	background-color: #B1CBE1;
+	border: 2px solid #4682B4;
+}
+
+.month ul {
+	list-style-type: none;
+	margin: 3px;
+	padding:0;
+}
+
+.month li {
+	color:#fff;
+   background:transparent url(level-2.gif) no-repeat; /*正常优先级活动背景图片高度也是td.line-height的两倍*/
+   padding:2px;
+	margin-bottom: 6px;
+	height:34px;  /*恰好为td.line-height的两倍，这样li里可以显式2行文字*/
+	overflow:hidden; /*显示不下的文字都隐藏起来*/
+	width:100px;
+}
+
+.month td li.important{
+   background:transparent url(level-1.gif) no-repeat; /*重要优先级活动背景图片高度也是td.line-height的两倍*/
+}
+
+</style>
+</head>
+<body>
+<table class="month" summary="Calendar for 2007.10">
+	<caption><span class="date">2007年10月 </span> <a href="calendar-small.html">小模式</a> | <a>中模式</a> | <a href="calendar-large.html">大模式</a></caption>
+	<tr>
+		<th scope="col"><span>星期</span>一</th>
+		<th scope="col"><span>星期</span>二</th>
+		<th scope="col"><span>星期</span>三</th>
+		<th scope="col"><span>星期</span>四</th>
+		<th scope="col"><span>星期</span>五</th>
+		<th scope="col"><span>星期</span>六</th>
+		<th scope="col"><span>星期</span>日</th>
+	</tr>
+	<tr>
+		<td class="previous">31</td>
+		<td>1</td>
+		<td class="active">2
+		<ul>
+			<li class="important">完成书稿第2部分</li>
+			<li>查Javascript相关资料相关资料</li>
+		</ul>
+		</td>
+		<td>3</td>
+		<td>4</td>
+		<td>5</td>
+		<td>6</td>
+	</tr>
+	<tr>
+		<td class="active">7
+		<ul>
+			<li>检查案例实施进度</li>
+		</ul>
+		</td>
+		<td>8</td>
+		<td>9</td>
+		<td>10</td>
+		<td>11</td>
+		<td>12</td>
+		<td class="active">13
+		<ul>
+			<li class="important">CSS禅意花园案例分析</li>
+			<li>给Dave回复邮件</li>
+		</ul>
+		</td>
+	</tr>
+	<tr>
+		<td>14</td>
+		<td>15</td>
+		<td>16</td>
+		<td class="active">17
+		<ul>
+			<li>artech.cn网站改版策划</li>
+		</ul>
+		</td>
+		<td class="active">18
+		<ul>
+			<li>录制CSS视频教程</li>
+			<li>其他视频教程策划</li>
+		</ul>
+		</td>
+		<td>19</td>
+		<td>20</td>
+	</tr>
+	<tr>
+		<td>21</td>
+		<td>22</td>
+		<td>23</td>
+		<td>24</td>
+		<td>25</td>
+		<td class="active">26
+		<ul>
+			<li>中关村图书大厦调研</li>
+		</ul>
+		</td>
+		<td class="active">27
+		<ul>
+			<li>西单图书大厦调研</li>
+			<li>北京图书大厦调研</li>
+		</ul>
+		</td>
+	</tr>
+	<tr>
+		<td>28</td>
+		<td>29</td>
+		<td >30
+		</td>
+		<td class="active">31
+			<ul>
+			<li class="important">准备出差资料</li>
+			<li>整理硬盘文件资料</li>
+			</ul>
+		</td>
+		
+		<td class="next">1</td>
+		<td class="next">2</td>
+		<td class="next">3</td>
+	</tr>
+</table>
+</body>
+</html>
